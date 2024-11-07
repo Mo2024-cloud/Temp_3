@@ -1,0 +1,396 @@
+:root{
+    --maincolor: #343434;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    /* height: 10000px; */
+}
+
+/* .nav-link{
+    color: aliceblue;
+} */
+
+.navbar a{
+    color: aliceblue;
+}
+
+.home{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../imgs/imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home h1::after{
+    content: '';
+    animation: header-animation 6s infinite;
+}
+
+@keyframes header-animation {
+    0%{
+        content: "|";
+    }
+    3%{
+        content: "D|";
+    }
+    6%{
+        content: "De|";
+    }
+    9%{
+        content: "Dev|";
+    }
+    12%{
+        content: "Deve|";
+    }
+    15%{
+        content: "Devel|";
+    }
+    18%{
+        content: "Develo|";
+    }
+    21%{
+        content: "Develop|";
+    }
+    24%{
+        content: "Develope|";
+    }
+    27%{
+        content: "Developer|";
+    }
+    30%{
+        content: "Develope|";
+    }
+    30%{
+        content: "Develop|";
+    }
+    33%{
+        content: "Develo|";
+    }
+    36%{
+        content: "Devel|";
+    }
+    39%{
+        content: "Deve|";
+    }
+    42%{
+        content: "Dev|";
+    }
+    45%{
+        content: "De|";
+    }
+    48%{
+        content: "Dei|";
+    }
+    51%{
+        content: "Deis|";
+    }
+    54%{
+        content: "Deisg|";
+    }
+    57%{
+        content: "Deisgn|";
+    }
+    60%{
+        content: "Deisgne|";
+    }
+    63%{
+        content: "Deisgner|";
+    }
+    66%{
+        content: "Deisgne|";
+    }
+    69%{
+        content: "Deisgn|";
+    }
+    71%{
+        content: "Deisg|";
+    }
+    73%{
+        content: "Deis|";
+    }
+    75%{
+        content: "Dei|";
+    }
+    77%{
+        content: "De|";
+    }
+    79%{
+        content: "D|";
+    }
+    81%{
+        content: "|";
+    }
+    83%{
+        content: "L|";
+    }
+    85%{
+        content: "La|";
+    }
+    87%{
+        content: "Lar|";
+    }
+    86%{
+        content: "Larr|";
+    }
+    88%{
+        content: "Larry|";
+    }
+    90%{
+        content: "Larry D|";
+    }
+    92%{
+        content: "Larry De|";
+    }
+    94%{
+        content: "Larry Den|";
+    }
+    96%{
+        content: "Larry Deni|";
+    }
+    98%{
+        content: "Larry Denie|";
+    }
+    100%{
+        content: "Larry Denies|";
+    }
+}
+
+.home .icons ul li {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    /* transition: all 1s; */
+    border-color: var(--maincolor);
+}
+.home .icons a{
+    color: aliceblue;
+}
+
+/* <!--  ------About------  --> */
+
+.about .btn-download1{
+    border: 2px solid var(--maincolor);
+    color: #fff;
+    background-color: black;
+}
+.about .btn-download2{
+    border: 2px solid var(--maincolor);
+    color: var(--maincolor);
+    background-color: #fff;
+}
+
+.about .btn-download1:hover{
+    background-color: #fff;
+    color: #333;
+}
+.about .btn-download2:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* <!--  ------Services------  --> */
+
+.services i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(235%);
+    background-color: #F7F7F7;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+}
+
+.services .container{
+    transform: translateX(25px
+    );
+}
+
+.services .container span{
+    display: inline-block;
+}
+
+.services  .container .card:hover i{
+    border: 1px solid var(--mainColor);
+    background-color: #000000;
+    color: #fff;
+}
+
+/* .about .right ul li i{
+    transition: all 1s;
+}
+
+.about .right ul li:hover i{
+    color: var(--mainColor);
+} */
+
+.portfolio .row ul li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+}
+
+
+.portfolio .item .layer{
+    left: 4px;
+    top: 100%;
+    width: 97.5%;
+    height: 97.5%;
+    background-color: #FDFDFD;
+    transition: all 0.5s;
+}
+
+
+
+.portfolio .item:hover .layer{
+    top: 4px;
+}
+
+.portfolio .item:hover li{
+    background-color: var(--maincolor);
+    color: white;
+}
+
+.nav-tabs{
+    display: flex;
+    justify-content: center;
+    margin-block: 15px;
+    border: none;
+
+}
+
+.nav-link{
+    color: black;
+}
+
+.nav-tabs .nav-link{
+    border: 0;
+}
+
+.portfolio .nav li{
+    position: relative;
+}
+
+.portfolio .nav .line{
+    transition: all 1s;
+}
+
+
+.portfolio .nav li:hover .line{
+    width: 100%;
+    height: 3px;
+    background-color: var(--maincolor);
+    position: absolute;
+}
+.nav-link:focus, .nav-link:hover{
+    color: #000000;
+}
+/* .portfolio .nav li::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: var(--maincolor);
+    position: absolute;
+} */
+
+
+/* <!--  ------Client------  --> */
+
+.client .carousel-inner img {
+    width: 7%;
+}
+
+
+.carousel-indicators {
+    bottom: -30px; 
+    
+}
+
+/* .carousel-indicators .active{
+    opacity: 0.5;
+} */
+
+.carousel-indicators [data-bs-target]{
+    height: 10px;
+    background-color: var(--maincolor);
+    width: 10px;
+    margin-right: 5px;
+}
+
+
+.team .row .card-body{
+    background-color: #5B5B5B;
+}
+
+
+/* .team .row ul li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    transition: all 1s;
+} */
+
+.team .row ul li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+}
+
+
+.team .item .layer{
+    left: 4px;
+    top: 100%;
+    width: 97.5%;
+    height: 97.5%;
+    background-color: #FDFDFD;
+    transition: all 0.5s;
+}
+
+
+
+.team .item:hover .layer{
+    top: 4px;
+}
+
+.team .item:hover li{
+    background-color: var(--maincolor);
+    color: white;
+}
+
+.btn-form{
+    background-color: var(--maincolor);
+    margin-top: 15px;
+    color: #fff;
+}
+
+.fotter{
+    height: 12vh;
+    background-color: var(--maincolor);
+}
+
+.fotter p{
+    transform: translateY(25px);
+    color: #7c7b7b;
+}
